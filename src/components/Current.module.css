@@ -1,0 +1,23 @@
+.Current {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  color: white;
+  text-shadow: 0.4rem 0.3rem 0.3rem black;
+}
+
+.curHead {
+  grid-area: 1/1/2/-1;
+}
+
+.curLeft {
+  grid-area: 2/1/3/2;
+}
+
+.curRight {
+  grid-area: 2/2/3/-1;
+}
+
+.curFoot {
+  grid-area: 3/1/4/3;
+}
