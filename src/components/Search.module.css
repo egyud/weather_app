@@ -1,0 +1,27 @@
+.Search {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: rgba(204, 204, 204, 0.1);
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.Search:focus,
+.Search_btn {
+  outline: none;
+}
+
+.Search_form {
+  margin-top: 2rem;
+}
+
+.Search_btn {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  background-color: rgb(77, 189, 51);
+  border: none;
+  cursor: pointer;
+}

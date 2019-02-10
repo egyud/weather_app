@@ -3,6 +3,7 @@ import './App.css';
 import Search from './components/Search';
 import Current from './components/Current';
 import DayList from './components/DayList/DayList';
+import Default from './components/Default/Default';
 import axios from 'axios';
 
 class App extends Component {
@@ -43,10 +44,9 @@ class App extends Component {
   render() {
     let cur = this.state.current;
     console.log(this.state.forecast);
-    return (
-      <div className="App">
-        <Search zipUpdate={this.handleInput} submit={this.handleSubmit}/>
-        <Current 
+    let display = <Default />;
+    if (this.state.forecast.length > 0) {
+      display = <><Current 
           temp={cur.temp_f}
           humidity={cur.humidity}
           feels={cur.feelslike_f}
@@ -56,7 +56,12 @@ class App extends Component {
           uv={cur.uv}
           // condition={cur.condition.text}
           />
-          <DayList forecast={this.state.forecast}/>
+          <DayList forecast={this.state.forecast}/></>
+    }
+    return (
+      <div className="App">
+        <Search zipUpdate={this.handleInput} submit={this.handleSubmit}/>
+        {display}
       </div>
     );
   }
