@@ -21,3 +21,9 @@
   grid-area: 2/2/3/-1;
   background-color: #ccc;
 }
+
+@media(min-width: 767px) {
+  .Day {
+    width: 20%;
+  }
+}

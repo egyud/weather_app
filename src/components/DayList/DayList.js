@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classes from './DayList.module.css';
 
 const DayList = ({ forecast }) => (
-    <div>
+    <div className={classes.DayList}>
       {forecast.map(day => 
         <Day 
           key={day.date}

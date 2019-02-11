@@ -1,0 +1,5 @@
+.DayList {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 3rem;
+}

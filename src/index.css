@@ -8,6 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
     background-image: url('images/blue-sky.jpg');
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     text-align: center;
 }
@@ -15,4 +17,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+@media(max-width: 767px) {
+  body {
+    background-image: url('images/blue-sky-mobile.jpeg');
+  }
 }

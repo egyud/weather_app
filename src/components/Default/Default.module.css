@@ -2,3 +2,10 @@
   color: white;
   margin-top: 8rem;
 }
+
+.Default > h1 {
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Lato',
+  sans-serif;
+}
