@@ -36,7 +36,8 @@ class App extends Component {
         this.setState({
           current: response.data.current,
           city: response.data.location.name,
-          forecast: response.data.forecast.forecastday
+          forecast: response.data.forecast.forecastday,
+          zipCode: ''
         })
       })
   }
@@ -60,7 +61,7 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <Search zipUpdate={this.handleInput} submit={this.handleSubmit}/>
+        <Search zipUpdate={this.handleInput} submit={this.handleSubmit} zipCode={this.state.zipCode}/>
         {display}
       </div>
     );

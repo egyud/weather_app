@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './Search.module.css';
 
-const Search = ({submit, zipUpdate}) => (
+const Search = ({submit, zipUpdate, zipCode}) => (
   <form className={classes.Search_form}>
-    <input className={classes.Search} onChange={zipUpdate} type="text" placeholder="Get your local weather"/>
+    <input className={classes.Search} onChange={zipUpdate} type="text" placeholder="Get your local weather" value={zipCode}/>
     <br></br>
     <button className={classes.Search_btn}onClick={submit}>Submit</button>
   </form>
