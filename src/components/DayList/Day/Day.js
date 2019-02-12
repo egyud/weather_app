@@ -1,10 +1,11 @@
 import React from 'react';
 import classes from './Day.module.css';
+import moment from 'moment';
 
 const Day = (props) => (
   <div className={classes.Day}>
     <div className={classes.DayHead}>
-      <span>{props.date}</span>
+      <span>{moment(props.date, 'YYYY-MM-DD').format('ddd MMM Do')}</span>
     </div>
     <div className={classes.DayLeft}>
       <p>High: {props.high}</p>

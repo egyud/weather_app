@@ -5,7 +5,7 @@ import classes from './Current.module.css';
 const Current = (props) => (
   <div className={classes.Current}>
     <div className={classes.curHead}>
-      <h2>Right now in {props.city}</h2>
+      <h2>Currently in {props.city}</h2>
       <p>{props.condition}</p>
     </div>
     <div className={classes.curLeft}>

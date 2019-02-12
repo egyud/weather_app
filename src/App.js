@@ -31,6 +31,7 @@ class App extends Component {
   getWeather = (zipCode) => {
     axios.get(`https://api.apixu.com/v1/forecast.json?key=b4a464944a254956a9e183656190902&q=${zipCode}&days=7`)
       .then(response => {
+        console.log(response.data.current.condition.text);
         // console.log(response.data.current)
         // console.log(response.data)
         this.setState({
@@ -55,7 +56,7 @@ class App extends Component {
           winSpd={cur.wind_mph}
           winDir={cur.wind_dir}
           uv={cur.uv}
-          // condition={cur.condition.text}
+          condition={cur.condition.text}
           />
           <DayList forecast={this.state.forecast}/></>
     }

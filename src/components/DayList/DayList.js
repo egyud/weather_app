@@ -9,7 +9,7 @@ const DayList = ({ forecast }) => (
         <Day 
           key={day.date}
           date={day.date}
-          // condition={day.condition.text}
+          condition={day.day.condition.text}
           high={day.day.maxtemp_f}
           low={day.day.mintemp_f}
           precip={day.day.totalprecip_in}
