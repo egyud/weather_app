@@ -9,8 +9,8 @@ const Current = (props) => (
       <p>{props.condition}</p>
     </div>
     <div className={classes.curLeft}>
-        <p>Current Temp: {props.temp}</p>
-        <p>Feels like: {props.feels}</p>
+        <p>Temperature: {props.temp}&#8457;</p>
+        <p>Feels like: {props.feels}&#8457;</p>
     </div>
     <div className={classes.curRight}>
         <p>UV Index: {props.uv}</p>

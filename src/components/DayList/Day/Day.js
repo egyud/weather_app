@@ -8,8 +8,8 @@ const Day = (props) => (
       <span>{moment(props.date, 'YYYY-MM-DD').format('ddd MMM Do')}</span>
     </div>
     <div className={classes.DayLeft}>
-      <p>High: {props.high}</p>
-      <p>Low: {props.low}</p>
+      <p>High: {props.high}&#8457;</p>
+      <p>Low: {props.low}&#8457;</p>
       <p>Precipitation: {props.precip}in</p>
     </div>
     <div className={classes.DayRight}>
